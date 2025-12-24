@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>RoseBlue</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #333;
+    }
+    
+    .navbar {
+      background-color: #fff;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .navbar-brand {
+      font-weight: 600;
+      color: #000 !important;
+    }
+    
+    .nav-link {
+      color: #666 !important;
+      font-size: 0.95rem;
+    }
+    
+    .nav-link:hover {
+      color: #000 !important;
+    }
+    
+    .card {
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+    }
+    
+    .btn-primary {
+      background-color: #000;
+      border-color: #000;
+    }
+    
+    .btn-primary:hover {
+      background-color: #333;
+      border-color: #333;
+    }
+    
+    .container {
+      padding: 40px 20px;
+    }
+    
+    h1 {
+      color: #000;
+      font-weight: 600;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+    
+    .card-title {
+      color: #000;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+    
+    .card-text {
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">RoseBlue</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/generer/">Generer</a></li>
+        <li class="nav-item"><a class="nav-link" href="/importer/">Importer</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <h1 class="text-center mt-5">Bienvenue sur RoseBlue</h1>
+  
+  <div class="row mt-5 g-4">
+    <div class="col-md-6 mx-auto">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <h5 class="card-title">Generer des donnees</h5>
+          <p class="card-text">Creez et generez des donnees fictives avec filtres et statistiques.</p>
+          <a href="/generer/" class="btn btn-primary">Commencer</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6 mx-auto">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <h5 class="card-title">Importer un CSV</h5>
+          <p class="card-text">Importez vos donnees CSV et analysez-les avec filtres et visualisations.</p>
+          <a href="/importer/" class="btn btn-primary">Commencer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

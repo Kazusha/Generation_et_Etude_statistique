@@ -1,0 +1,365 @@
+﻿code;intituler;credit;semestre;license
+CHM1120;Chimie appliquée;3;1;License Genie civile
+FRA1120;Techniques de communication orales;2;1;License Genie civile
+INF1120;Algorithmique et Initiation à la programmation;4;1;License Genie civile
+MTH1120;Bases mathématiques;4;;License Genie civile
+MTH1121;Calcul différentiel et Pratique;6;1;License Genie civile
+MTU1120;Méthode de travail universitaire;2;1;License Genie civile
+PHY1120;Physique pour l'ingénieur : Éléments de mécanique classique du point dans un référentiel galiléen;4;1;License Genie civile
+PHY1121;Physique pour l'ingénieur : Électricité;5;1;License Genie civile
+ANG1221;Anglais : compréhension orale et écrite;2;2;License Genie civile
+FRA1220;Techniques de communication écrites;2;2;License Genie civile
+GEM1220;Géométrie descriptive et dessin;5;2;License Genie civile
+INF1220;Structure de données et programmation C;4;2;License Genie civile
+INF1221;Programmation Python;3;2;License Genie civile
+MTH1220;Structure algébrique de base;4;2;License Genie civile
+MTH1221;Algèbre linéaire et Pratique;6;2;License Genie civile
+PHY1220;Mécanique du solide;4;2;License Genie civile
+INF1320;Programmation Orientée Objet;4;3;License Genie civile
+INF1321;Architecture et technologie des ordinateurs et des Système d'information;3;3;License Genie civile
+MTH1320;Séries et intégrations multiple et généralisée;4;3;License Genie civile
+MTH1321;Mathématiques pour l’Ingénieur : Probabilités et Statistiques;5;3;License Genie civile
+MTH1322;Algèbre tensorielle;2;3;License Genie civile
+PHY1320;Physique pour l'ingénieur : Loi de la thermodynamique;2;3;License Genie civile
+PHY1321;Physique pour l'ingénieur : Optique;4;3;License Genie civile
+SEG1320;Economie et comptabilité;4;3;License Genie civile
+ANG1420;Anglais de spécialité : Approche thématique des textes, compréhension orale et écrite;2;4;License Genie civile
+GEC1422;Résistance des Matériaux pour GC;5;4;License Genie civile
+GEC1423;Hydraulique des bases;4;4;License Genie civile
+GEL1429;Installations électriques;2;4;License Genie civile
+MTH1420;Calcul différentiel dans Rn;4;4;License Genie civile
+MTH1421;Statistiques inférentielles (décisionnelles);2;4;License Genie civile
+MTH1422;Analyse numérique et Pratique;5;4;License Genie civile
+MTH1423;Théorie des graphes;4;4;License Genie civile
+GEC1520;Technique de construction;4;5;License Genie civile
+GEC1521;Structures;2;5;License Genie civile
+GEC1522;Topographie appliquée;6;5;License Genie civile
+GEC1523;Matériaux: de génie civil;6;5;License Genie civile
+GEC1524;Dessin appliqué au génie civil;6;5;License Genie civile
+GEC1525;Géotechnique;4;5;License Genie civile
+GEC1620;Routes;6;;License Genie civile
+GEC1621;Béton Armé;5;;License Genie civile
+GEC1622;Hydrologie de l' ingénieur;4;6;License Genie civile
+GEC1623;Métré et étude de prix;2;6;License Genie civile
+GEC1624;Construction métallique : notions de bases et technologie;3;6;License Genie civile
+GEC1625;Eau et assainissement:technologie;5;6;License Genie civile
+GEC1626;Mécanique des sols;2;6;License Genie civile
+CHM1120;Chimie appliquée;3;1;License Genie Electrique
+FRA1120;Techniques de communication orales;2;1;License Genie Electrique
+INF1120;Algorithmique et Initiation à la programmation;4;1;License Genie Electrique
+MTH1120;Bases mathématiques;4;1;License Genie Electrique
+MTH1121;Calcul différentiel et Pratique;6;1;License Genie Electrique
+MTU1120;Méthode de travail universitaire;2;1;License Genie Electrique
+PHY1120;Physique pour l'ingénieur : Éléments de mécanique classique du point dans un référentiel galiléen;4;1;License Genie Electrique
+PHY1121;Physique pour l'ingénieur : Électricité;5;1;License Genie Electrique
+ANG1221;Anglais : compréhension orale et écrite;2;2;License Genie Electrique
+FRA1220;Techniques de communication écrites;2;2;License Genie Electrique
+GEM1220;Géométrie descriptive et dessin;5;2;License Genie Electrique
+INF1220;Structure de données et programmation C;4;2;License Genie Electrique
+INF1221;Programmation Python;3;2;License Genie Electrique
+MTH1220;Structure algébrique de base;4;2;License Genie Electrique
+MTH1221;Algèbre linéaire et Pratique;6;2;License Genie Electrique
+PHY1220;Mécanique du solide;4;2;License Genie Electrique
+INF1320;Programmation Orientée Objet;4;3;License Genie Electrique
+INF1321;Architecture et technologie des ordinateurs et des Système d'information;3;3;License Genie Electrique
+MTH1320;Séries et intégrations multiple et généralisée;4;3;License Genie Electrique
+MTH1321;Mathématiques pour l’Ingénieur : Probabilités et Statistiques;5;3;License Genie Electrique
+MTH1322;Algèbre tensorielle;2;3;License Genie Electrique
+PHY1320;Physique pour l'ingénieur : Loi de la thermodynamique;2;3;License Genie Electrique
+PHY1321;Physique pour l'ingénieur : Optique;4;3;License Genie Electrique
+SEG1320;Economie et comptabilité;4;3;License Genie Electrique
+ANG1420;Anglais de spécialité : Approche thématique des textes, compréhension orale et écrite;2;4;License Genie Electrique
+GEL1420;Electronique;4;4;License Genie Electrique
+GEL1421;Electronique - Magnétisme - Machines - Réseaux;4;4;License Genie Electrique
+GEM1420;Notion de RDM pour ingénieur GE;3;4;License Genie Electrique
+MTH1420;Calcul différentiel dans Rn;4;4;License Genie Electrique
+MTH1421;Statistiques inférentielles (décisionnelles);2;4;License Genie Electrique
+MTH1422;Analyse numérique et Pratique;5;4;License Genie Electrique
+MTH1423;Théorie des graphes;4;4;License Genie Electrique
+GEL1520;Production, Transport, Distribution et Protection;3;5;License Genie Electrique
+GEL1521;Electronique Numérique;3;5;License Genie Electrique
+GEL1522;Systèmes Signaux Simulation;3;5;License Genie Electrique
+GEL1523;Electronique du Signal et Composants;4;5;License Genie Electrique
+GEL1524;Appareillage et Câblage Electriques;4;5;License Genie Electrique
+GEL1525;Circuits et Mesures Electriques;6;5;License Genie Electrique
+GEL1526;Stage d'initiation au métier de génie électrique;5;5;License Genie Electrique
+GEL1620;Asservissement et Régulation des Systèmes Linéaire;3;6;License Genie Electrique
+GEL1622;Electrostatique - Electrocinétique - Electromagnétisme;4;6;License Genie Electrique
+GEL1623;Machines électriques;4;6;License Genie Electrique
+GEL1624;Système de Maintenance;2;6;License Genie Electrique
+GEL1625;Automate Programmable Industriel;4;6;License Genie Electrique
+GEL1626;Convertisseurs statiques;4;6;License Genie Electrique
+GEL1627;Electroniques : Fonctions et Systèmes;2;6;License Genie Electrique
+GEL1628;Projet de Spécialité GE;2;6;License Genie Electrique
+GEL1629;Traitement du Signal;2;6;License Genie Electrique
+CHM1120;Chimie appliquée;3;1;License Genie Mecanique
+FRA1120;Techniques de communication orales;2;1;License Genie Mecanique
+INF1120;Algorithmique et Initiation à la programmation;4;1;License Genie Mecanique
+MTH1120;Bases mathématiques;4;1;License Genie Mecanique
+MTH1121;Calcul différentiel et Pratique;6;1;License Genie Mecanique
+MTU1120;Méthode de travail universitaire;2;1;License Genie Mecanique
+PHY1120;Physique pour l'ingénieur : Éléments de mécanique classique du point dans un référentiel galiléen;4;1;License Genie Mecanique
+PHY1121;Physique pour l'ingénieur : Électricité;5;1;License Genie Mecanique
+ANG1221;Anglais : compréhension orale et écrite;2;2;License Genie Mecanique
+FRA1220;Techniques de communication écrites;2;2;License Genie Mecanique
+GEM1220;Géométrie descriptive et dessin;5;2;License Genie Mecanique
+INF1220;Structure de données et programmation C;4;2;License Genie Mecanique
+INF1221;Programmation Python;3;2;License Genie Mecanique
+MTH1220;Structure algébrique de base;4;2;License Genie Mecanique
+MTH1221;Algèbre linéaire et Pratique;6;2;License Genie Mecanique
+PHY1220;Mécanique du solide;4;2;License Genie Mecanique
+;;;;
+INF1320;Programmation Orientée Objet;4;3;License Genie Mecanique
+INF1321;Architecture et technologie des ordinateurs et des Système d'information;3;3;License Genie Mecanique
+MTH1320;Séries et intégrations multiple et généralisée;4;3;License Genie Mecanique
+MTH1321;Mathématiques pour l’Ingénieur : Probabilités et Statistiques;5;3;License Genie Mecanique
+MTH1322;Algèbre tensorielle;2;3;License Genie Mecanique
+PHY1320;Physique pour l'ingénieur : Loi de la thermodynamique;2;3;License Genie Mecanique
+PHY1321;Physique pour l'ingénieur : Optique;4;3;License Genie Mecanique
+SEG1320;Economie et comptabilité;4;3;License Genie Mecanique
+ANG1420;Anglais de spécialité : Approche thématique des textes, compréhension orale et écrite;2;4;License Genie Mecanique
+GEL1420;Introduction à l'électronique et montage des circuits électroniques;2;4;License Genie Mecanique
+GEL1421;Physiques pour l'Ingénieur : Electrotechnique - Magnétisme - Machines - Réseaux;2;4;License Genie Mecanique
+GEL1422;Physiques pour l'ingénieur : Electrostatique - Electrocinétique - Electromagnétisme;3;4;License Genie Mecanique
+GEL1423;Physique des Capteurs : Notions fondamentales;2;4;License Genie Mecanique
+GEM1420;Résistance des matériaux pour ingénieur génie mécanique;2;4;License Genie Mecanique
+MTH1420;Calcul différentiel dans Rn;4;4;License Genie Mecanique
+MTH1421;Statistiques inférentielles (décisionnelles);2;4;License Genie Mecanique
+MTH1422;Analyse numérique et Pratique;5;4;License Genie Mecanique
+MTH1423;Théorie des graphes;4;4;License Genie Mecanique
+GEM1520;Fabrication mécanique 1;5;5;License Genie Mecanique
+GEM1521;Construction mécanique : les organes de transmission de puissance;4;5;License Genie Mecanique
+GEM1522;Métrologie;3;5;License Genie Mecanique
+GEM1523;Conception assistée par ordinateur;4;5;License Genie Mecanique
+GEM1524;Résistance des matériaux : Dimensionnement des structures;4;5;License Genie Mecanique
+GEM1525;Bureau des méthodes;4;5;License Genie Mecanique
+GEM1526;Organisation et méthodes de la maintenance;2;5;License Genie Mecanique
+GEM1527;Energies renouvelables;2;5;License Genie Mecanique
+ANG1620;Anglais de spécialité pour le mécanicien;2;6;License Genie Mecanique
+GEM1620;Métallurgie;3;6;License Genie Mecanique
+GEM1621;Fabrication assistée par ordinateur et Pratique;4;6;License Genie Mecanique
+GEM1622;Maintenance industrielle;2;6;License Genie Mecanique
+GEM1623;Projet de conception;2;6;License Genie Mecanique
+GEM1624;Montage d'usinage;2;6;License Genie Mecanique
+GEM1625;Transfert Thermique;3;6;License Genie Mecanique
+GEM1626;Thermodynamique avancée;2;6;License Genie Mecanique
+GEM1627;Fabrication mécanique 2;5;6;License Genie Mecanique
+GEM1628;Hydraulique et pneumatique;2;6;License Genie Mecanique
+CHM1120;Chimie appliquée;3;1;License Informatique et Systeme
+FRA1120;Techniques de communication orales;2;1;License Informatique et Systeme
+INF1120;Algorithmique et Initiation à la programmation;4;1;License Informatique et Systeme
+MTH1120;Bases mathématiques;4;1;License Informatique et Systeme
+MTH1121;Calcul différentiel et Pratique;6;1;License Informatique et Systeme
+MTU1120;Méthode de travail universitaire;2;1;License Informatique et Systeme
+PHY1120;Physique pour l'ingénieur : Éléments de mécanique classique du point dans un référentiel galiléen;4;1;License Informatique et Systeme
+PHY1121;Physique pour l'ingénieur : Électricité;5;1;License Informatique et Systeme
+ANG1221;Anglais : compréhension orale et écrite;2;2;License Informatique et Systeme
+FRA1220;Techniques de communication écrites;2;2;License Informatique et Systeme
+GEM1220;Géométrie descriptive et dessin;5;2;License Informatique et Systeme
+INF1220;Structure de données et programmation C;4;2;License Informatique et Systeme
+INF1221;Programmation Python;3;2;License Informatique et Systeme
+MTH1220;Structure algébrique de base;4;2;License Informatique et Systeme
+MTH1221;Algèbre linéaire et Pratique;6;2;License Informatique et Systeme
+PHY1220;Mécanique du solide;4;2;License Informatique et Systeme
+INF1320;Programmation Orientée Objet;4;3;License Informatique et Systeme
+INF1321;Architecture et technologie des ordinateurs et des Système d'information;3;3;License Informatique et Systeme
+MTH1320;Séries et intégrations multiple et généralisée;4;3;License Informatique et Systeme
+MTH1321;Mathématiques pour l’Ingénieur : Probabilités et Statistiques;5;3;License Informatique et Systeme
+MTH1322;Algèbre tensorielle;2;3;License Informatique et Systeme
+PHY1320;Physique pour l'ingénieur : Loi de la thermodynamique;2;3;License Informatique et Systeme
+PHY1321;Physique pour l'ingénieur : Optique;4;3;License Informatique et Systeme
+SEG1320;Economie et comptabilité;4;3;License Informatique et Systeme
+ANG1420;Anglais de spécialité : Approche thématique des textes, compréhension orale et écrite;2;4;License Informatique et Systeme
+DRT1420;Droit: droit du travail et droit de l'informatique;2;4;License Informatique et Systeme
+INF1428;Architecture et fonctionnement des réseaux Informatiques;3;4;License Informatique et Systeme
+INF1429;Analyse et conception MERISE;4;4;License Informatique et Systeme
+MTH1420;Calcul différentiel dans Rn;4;4;License Informatique et Systeme
+MTH1421;Statistiques inférentielles (décisionnelles);2;4;License Informatique et Systeme
+MTH1422;Analyse numérique et Pratique;5;4;License Informatique et Systeme
+MTH1423;Théorie des graphes;4;4;License Informatique et Systeme
+ANG1520;Anglais;2;;License Informatique et Systeme
+INF1520;Initiation aux Systèmes d’Information;4;5;License Informatique et Systeme
+INF1521;Base de données;4;5;License Informatique et Systeme
+INF1522;Modélisation-UML;4;5;License Informatique et Systeme
+INF1525;Projet tutoré;3;5;License Informatique et Systeme
+INF1526;Bases de la Sécurité des systèmes informatiques;3;5;License Informatique et Systeme
+INF1527;Généralités sur les stockages de l'information;3;5;License Informatique et Systeme
+INF1528;Programmation web;4;5;License Informatique et Systeme
+INF1529;Compilation;3;5;License Informatique et Systeme
+ANG1620;Anglais;2;6;License Informatique et Systeme
+INF1620;Adminsitration de bases de données;4;6;License Informatique et Systeme
+INF1621;Adminsitration Système Linux;3;6;License Informatique et Systeme
+INF1623;Initiation à l'ingénierie des Systèmes d'Information;3;6;License Informatique et Systeme
+INF1624;Développement d'applications de bureau;4;6;License Informatique et Systeme
+INF1625;Développement d'applications distribuées;4;6;License Informatique et Systeme
+INF1630;Stage;6;6;License Informatique et Systeme
+CHM1120;Chimie appliquée;3;1;License Intelligence Artificielle et Big Data
+FRA1120;Techniques de communication orales;2;1;License Intelligence Artificielle et Big Data
+INF1120;Algorithmique et Initiation à la programmation;4;1;License Intelligence Artificielle et Big Data
+MTH1120;Bases mathématiques;4;1;License Intelligence Artificielle et Big Data
+MTH1121;Calcul différentiel et Pratique;6;1;License Intelligence Artificielle et Big Data
+MTU1120;Méthode de travail universitaire;2;1;License Intelligence Artificielle et Big Data
+PHY1120;Physique pour l'ingénieur : Éléments de mécanique classique du point dans un référentiel galiléen;4;1;License Intelligence Artificielle et Big Data
+PHY1121;Physique pour l'ingénieur : Électricité;5;1;License Intelligence Artificielle et Big Data
+ANG1221;Anglais : compréhension orale et écrite;2;2;License Intelligence Artificielle et Big Data
+FRA1220;Techniques de communication écrites;2;2;License Intelligence Artificielle et Big Data
+GEM1220;Géométrie descriptive et dessin;5;2;License Intelligence Artificielle et Big Data
+INF1220;Structure de données et programmation C;4;2;License Intelligence Artificielle et Big Data
+INF1221;Programmation Python;3;2;License Intelligence Artificielle et Big Data
+MTH1220;Structure algébrique de base;4;2;License Intelligence Artificielle et Big Data
+MTH1221;Algèbre linéaire et Pratique;6;2;License Intelligence Artificielle et Big Data
+PHY1220;Mécanique du solide;4;2;License Intelligence Artificielle et Big Data
+INF1320;Programmation Orientée Objet;4;3;License Intelligence Artificielle et Big Data
+INF1321;Architecture et technologie des ordinateurs et des Système d'information;3;3;License Intelligence Artificielle et Big Data
+MTH1320;Séries et intégrations multiple et généralisée;4;3;License Intelligence Artificielle et Big Data
+MTH1321;Mathématiques pour l’Ingénieur : Probabilités et Statistiques;5;3;License Intelligence Artificielle et Big Data
+MTH1322;Algèbre tensorielle;2;3;License Intelligence Artificielle et Big Data
+PHY1320;Physique pour l'ingénieur : Loi de la thermodynamique;2;3;License Intelligence Artificielle et Big Data
+PHY1321;Physique pour l'ingénieur : Optique;4;3;License Intelligence Artificielle et Big Data
+SEG1320;Economie et comptabilité;4;3;License Intelligence Artificielle et Big Data
+ANG1420;Anglais de spécialité : Approche thématique des textes, compréhension orale et écrite;2;4;License Intelligence Artificielle et Big Data
+DRT1420;Droit: droit du travail et droit de l'informatique;2;4;License Intelligence Artificielle et Big Data
+INF1428;Architecture et fonctionnement des réseaux Informatiques;3;4;License Intelligence Artificielle et Big Data
+INF1429;Analyse et conception MERISE;4;4;License Intelligence Artificielle et Big Data
+MTH1420;Calcul différentiel dans Rn;4;4;License Intelligence Artificielle et Big Data
+MTH1421;Statistiques inférentielles (décisionnelles);2;4;License Intelligence Artificielle et Big Data
+MTH1422;Analyse numérique et Pratique;5;4;License Intelligence Artificielle et Big Data
+MTH1423;Théorie des graphes;4;4;License Intelligence Artificielle et Big Data
+ANG1520;Anglais;2;5;License Intelligence Artificielle et Big Data
+INF1520;Initiation aux Systèmes d’Information;4;5;License Intelligence Artificielle et Big Data
+INF1521;Base de données;4;5;License Intelligence Artificielle et Big Data
+INF1522;Modélisation-UML;4;5;License Intelligence Artificielle et Big Data
+INF1523;Méthodes numériques en python pour l'analyse;4;5;License Intelligence Artificielle et Big Data
+INF1525;Projet tutoré;3;5;License Intelligence Artificielle et Big Data
+MTH1520;Recherche opérationnelle;4;5;License Intelligence Artificielle et Big Data
+MTH1524;Modélisation statistique;3;5;License Intelligence Artificielle et Big Data
+ANG1620;Anglais;2;6;License Intelligence Artificielle et Big Data
+INF1620;Adminsitration de bases de données;4;6;License Intelligence Artificielle et Big Data
+INF1621;Adminsitration Système Linux;3;6;License Intelligence Artificielle et Big Data
+INF1622;Programmation distribuée pour le stockage et le calcul;4;6;License Intelligence Artificielle et Big Data
+INF1630;Stage;6;6;License Intelligence Artificielle et Big Data
+MTH1620;Statistiques exploratoires multidimensionelles;3;6;License Intelligence Artificielle et Big Data
+MTH1621;Data Mining;4;6;License Intelligence Artificielle et Big Data
+CHM1120;Chimie appliquée;3;1;License Logistique et Transport
+FRA1120;Techniques de communication orales;2;1;License Logistique et Transport
+INF1120;Algorithmique et Initiation à la programmation;4;1;License Logistique et Transport
+MTH1120;Bases mathématiques;4;1;License Logistique et Transport
+MTH1121;Calcul différentiel et Pratique;6;1;License Logistique et Transport
+MTU1120;Méthode de travail universitaire;2;1;License Logistique et Transport
+PHY1120;Physique pour l'ingénieur : Éléments de mécanique classique du point dans un référentiel galiléen;4;1;License Logistique et Transport
+PHY1121;Physique pour l'ingénieur : Électricité;5;1;License Logistique et Transport
+ANG1221;Anglais : compréhension orale et écrite;2;2;License Logistique et Transport
+FRA1220;Techniques de communication écrites;2;2;License Logistique et Transport
+GEM1220;Géométrie descriptive et dessin;5;2;License Logistique et Transport
+INF1220;Structure de données et programmation C;4;2;License Logistique et Transport
+INF1221;Programmation Python;3;2;License Logistique et Transport
+MTH1220;Structure algébrique de base;4;2;License Logistique et Transport
+MTH1221;Algèbre linéaire et Pratique;6;2;License Logistique et Transport
+PHY1220;Mécanique du solide;4;2;License Logistique et Transport
+INF1320;Programmation Orientée Objet;4;3;License Logistique et Transport
+INF1321;Architecture et technologie des ordinateurs et des Système d'information;3;3;License Logistique et Transport
+MTH1320;Séries et intégrations multiple et généralisée;4;3;License Logistique et Transport
+MTH1321;Mathématiques pour l’Ingénieur : Probabilités et Statistiques;5;3;License Logistique et Transport
+MTH1322;Algèbre tensorielle;2;3;License Logistique et Transport
+PHY1320;Physique pour l'ingénieur : Loi de la thermodynamique;2;3;License Logistique et Transport
+PHY1321;Physique pour l'ingénieur : Optique;4;3;License Logistique et Transport
+SEG1320;Economie et comptabilité;4;3;License Logistique et Transport
+ANG1420;Anglais de spécialité : Approche thématique des textes, compréhension orale et écrite;2;4;License Logistique et Transport
+DRT1420;Droit: droit du travail et droit de l'informatique;2;4;License Logistique et Transport
+INF1428;Architecture et fonctionnement des réseaux Informatiques;3;4;License Logistique et Transport
+INF1429;Analyse et conception MERISE;4;4;License Logistique et Transport
+MTH1420;Calcul différentiel dans Rn;4;4;License Logistique et Transport
+MTH1421;Statistiques inférentielles (décisionnelles);2;4;License Logistique et Transport
+MTH1422;Analyse numérique et Pratique;5;4;License Logistique et Transport
+MTH1423;Théorie des graphes;4;4;License Logistique et Transport
+ANG1520;Anglais;2;5;License Logistique et Transport
+GEI1520;Introduction aux technologies de fabrication avancées;3;5;License Logistique et Transport
+GEI1521;Qualité niveau I;4;5;License Logistique et Transport
+GES1520;Gestion des stocks niveau I;3;5;License Logistique et Transport
+GES1521;Gestion de production niveau I;3;5;License Logistique et Transport
+INF1520;Initiation aux Systèmes d’Information;4;5;License Logistique et Transport
+INF1521;Base de données;4;5;License Logistique et Transport
+INF1525;Projet tutoré;3;5;License Logistique et Transport
+MTH1520;Recherche opérationnelle;4;5;License Logistique et Transport
+MTH1524;Modélisation statistique;3;5;License Logistique et Transport
+ANG1620;Anglais;2;6;License Logistique et Transport
+GEI1620;Qualité niveau II;4;6;License Logistique et Transport
+GES1620;Gestion des stocks niveau II;4;6;License Logistique et Transport
+GES1621;Gestion de production niveau II;4;6;License Logistique et Transport
+GES1623;Logistique de transport et de distribution;4;6;License Logistique et Transport
+INF1630;Stage;6;6;License Logistique et Transport
+ANG2128;Practical English B1(Mise à niveau);3;1;Master Informatique et Systeme
+ANG2129;Professional English B2+ (mise à niveau);3;1;Master Informatique et Systeme
+DRT2120;Droit, éthique, propriété intellectuelle;3;1;Master Informatique et Systeme
+INF2120;Aide à la décision;6;1;Master Informatique et Systeme
+INF2122;Programmation;6;1;Master Informatique et Systeme
+MGT2121;Management de projets et d'entreprise;6;1;Master Informatique et Systeme
+MTH2120;Statistique inférentielle;4;1;Master Informatique et Systeme
+MTH2129;Fondements de l'informatique et de l'IA;6;1;Master Informatique et Systeme
+ANG2228;Professional English B2;3;2;Master Informatique et Systeme
+ANG2229;English for Technology and Industry C1;3;2;Master Informatique et Systeme
+FPU2221;Méthodologie de recherche en sciences;2;2;Master Informatique et Systeme
+INF2220;Optimisation avancée;4;2;Master Informatique et Systeme
+INF2221;Méthodes de Machine Learning;4;2;Master Informatique et Systeme
+INF2225;Fondamentaux du génie logiciel;6;2;Master Informatique et Systeme
+INF2226;Réseaux informatiques : CCNA Routing and Switching (certification);5;2;Master Informatique et Systeme
+TCC2220;Projet tuteuré 1 : Observer son environnement et proposer des solutions;4;2;Master Informatique et Systeme
+TCC2223;Séminaire : Présentation sur un thème ou outil;2;2;Master Informatique et Systeme
+ANG2328;Business English B2 et EXAMEN INTERNATIONAL;3;3;Master Informatique et Systeme
+ANG2329;Business English C1 et EXAMEN INTERNATIONAL;3;3;Master Informatique et Systeme
+INF2320;Conception et pilotage de système d'IoT;4;3;Master Informatique et Systeme
+INF2321;Migration cloud;3;3;Master Informatique et Systeme
+INF2322;Architecture et développement en JEE;4;3;Master Informatique et Systeme
+INF2325;Sécurité des systèmes informatiques;4;3;Master Informatique et Systeme
+INF2327;Administration des bases de données avancées;5;3;Master Informatique et Systeme
+INF2329;Interface Homme-Machine;4;3;Master Informatique et Systeme
+TCC2320;Projet tutoré 2;3;3;Master Informatique et Systeme
+INF2420;Stage de longue durée, période de création d'entreprise (24 semaines);30;3;Master Informatique et Systeme
+ANG2128;Practical English B1(Mise à niveau);3;1;Master Intelligence Artificiel et Big Data
+ANG2129;Professional English B2+ (mise à niveau);3;1;Master Intelligence Artificiel et Big Data
+DRT2120;Droit, éthique, propriété intellectuelle;3;1;Master Intelligence Artificiel et Big Data
+INF2120;Aide à la décision;6;1;Master Intelligence Artificiel et Big Data
+INF2122;Programmation;6;1;Master Intelligence Artificiel et Big Data
+MGT2121;Management de projets et d'entreprise;6;1;Master Intelligence Artificiel et Big Data
+MTH2120;Statistique inférentielle;4;1;Master Intelligence Artificiel et Big Data
+MTH2129;Fondements de l'informatique et de l'IA;6;1;Master Intelligence Artificiel et Big Data
+ANG2228;Professional English B2;3;2;Master Intelligence Artificiel et Big Data
+ANG2229;English for Technology and Industry C1;3;2;Master Intelligence Artificiel et Big Data
+FPU2221;Méthodologie de recherche en sciences;2;2;Master Intelligence Artificiel et Big Data
+INF2220;Optimisation avancée;4;2;Master Intelligence Artificiel et Big Data
+INF2221;Méthodes de Machine Learning;4;2;Master Intelligence Artificiel et Big Data
+INF2223;Données et architecture;3;2;Master Intelligence Artificiel et Big Data
+INF2227;Technique et outils de production;3;2;Master Intelligence Artificiel et Big Data
+INF2228;Programmation avancée 2;4;2;Master Intelligence Artificiel et Big Data
+INF2229;Informatique et Gestion de données;3;2;Master Intelligence Artificiel et Big Data
+TCC2220;Projet tuteuré 1 : Observer son environnement et proposer des solutions;4;2;Master Intelligence Artificiel et Big Data
+ANG2328;Business English B2 et EXAMEN INTERNATIONAL;3;3;Master Intelligence Artificiel et Big Data
+ANG2329;Business English C1 et EXAMEN INTERNATIONAL;3;3;Master Intelligence Artificiel et Big Data
+INF2321;Migration cloud;3;3;Master Intelligence Artificiel et Big Data
+INF2323;Environnement du Big Data;3;3;Master Intelligence Artificiel et Big Data
+INF2324;Cloud et Traitements distribués;3;3;Master Intelligence Artificiel et Big Data
+INF2326;Plateforme Middleware pour le Big Data;4;3;Master Intelligence Artificiel et Big Data
+INF2328;Programmation avancée 3;3;3;Master Intelligence Artificiel et Big Data
+MTH2321;Reconnaissance et apprentissage automatique (RL, LSTM et NLP);5;3;Master Intelligence Artificiel et Big Data
+MTH2329;Mathématiques de l'IA 3 : MLP, CNN et GAN;3;3;Master Intelligence Artificiel et Big Data
+TCC2320;Projet tutoré 2;3;3;Master Intelligence Artificiel et Big Data
+INF2420;Stage de longue durée, période de création d'entreprise (24 semaines);30;4;Master Intelligence Artificiel et Big Data
+ANG2128;Practical English B1(Mise à niveau);3;1;Master Logistique et Transport
+ANG2129;Professional English B2+ (mise à niveau);3;1;Master Logistique et Transport
+DRT2120;Droit, éthique, propriété intellectuelle;3;1;Master Logistique et Transport
+INF2120;Aide à la décision;6;1;Master Logistique et Transport
+INF2122;Programmation;6;1;Master Logistique et Transport
+MGT2121;Management de projets et d'entreprise;6;1;Master Logistique et Transport
+MTH2129;Fondements de l'informatique et de l'IA;6;1;Master Logistique et Transport
+ANG2228;Professional English B2;3;2;Master Logistique et Transport
+ANG2229;English for Technology and Industry C1;3;2;Master Logistique et Transport
+FPU2221;Méthodologie de recherche en sciences;2;2;Master Logistique et Transport
+INF2220;Optimisation avancée;4;2;Master Logistique et Transport
+INF2221;Modélisation d'un processus logistique;4;2;Master Logistique et Transport
+INF2225;Conception de réseau logistique;5;2;Master Logistique et Transport
+INF2226;Gestion des entrepôts;3;2;Master Logistique et Transport
+TCC2220;Projet tuteuré 1 : Observer son environnement et proposer des solutions;4;2;Master Logistique et Transport
+TCC2223;Ordonnancement;5;2;Master Logistique et Transport
+ANG2328;Business English B2 et EXAMEN INTERNATIONAL;3;3;Master Logistique et Transport
+ANG2329;Business English C1 et EXAMEN INTERNATIONAL;3;3;Master Logistique et Transport
+TCC2320;Projet tutoré 2;3;3;Master Logistique et Transport

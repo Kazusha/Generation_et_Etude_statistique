@@ -1,0 +1,253 @@
+{% extends "bluerose/base.html" %}
+{% block content %}
+<h2>Generer des donnees simulees</h2>
+<div class="card p-3">
+  <form id="generateForm" class="row g-3" method="post" action="/upload/">
+    {% csrf_token %}
+    <div class="col-md-8">
+      <input type="number" name="n_etudiants" class="form-control" placeholder="Nombre d'étudiants" min="1" required>
+    </div>
+    <div class="col-md-4">
+      <button type="submit" class="btn btn-primary w-100">Générer</button>
+    </div>
+  </form>
+  <div id="generateMsg" class="mt-3 fw-semibold"></div>
+</div>
+
+<div class="card mt-4">
+  <h4 class="card-header">Aperçu des données générées</h4>
+  <div class="table-responsive">
+    <table class="table table-bordered table-sm" id="previewTable">
+      <thead>
+        <tr>
+          <th>Etudiant</th><th>Genre</th><th>Age</th><th>Parcours</th>
+          <th>Semestre</th><th>UE-Code</th><th>UE-intituler</th>
+          <th>Professeur</th><th>Credit</th><th>Note</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card mt-4">
+  <h4 class="card-header">Filtres et Visualisations</h4>
+  <div class="p-3">
+    <form id="chartsFilterForm" class="row g-2 mb-3">
+      <div class="col-md-3"><select id="f_professeur" class="form-select"><option value="">-- Professeur --</option></select></div>
+      <div class="col-md-3"><select id="f_parcours" class="form-select"><option value="">-- Parcours --</option></select></div>
+      <div class="col-md-2"><select id="f_semestre" class="form-select"><option value="">-- Semestre --</option></select></div>
+      <div class="col-md-2"><select id="f_matiere" class="form-select"><option value="">-- Matiere --</option></select></div>
+      <div class="col-md-2 text-end"><button id="applyFilters" class="btn btn-primary btn-sm">Appliquer</button> <button id="resetFilters" class="btn btn-secondary btn-sm">Réinitialiser</button></div>
+    </form>
+
+    <div id="filterInfo" class="alert alert-info small mb-3" style="display:none;"></div>
+    <div id="chartsContainer" class="d-flex flex-wrap gap-3"></div>
+    <div class="mt-3">
+      <button id="exportBtn" class="btn btn-success">Exporter les resultats</button>
+      <span id="exportStatus" class="ms-2 text-muted"></span>
+    </div>
+  </div>
+</div>
+
+<script>
+async function fetchCharts(params = ''){
+  const res = await fetch('/charts_data/' + params);
+  const body = await res.json();
+  if (!res.ok) { console.warn('charts_data error', body); return; }
+  populateFilterOptions(body.available_filters);
+  displayFilterInfo(body.applied_filters || {});
+  renderCharts(body.charts, body.applied_filters || {});
+}
+
+function displayFilterInfo(applied){
+  const info = document.getElementById('filterInfo');
+  const filters = [];
+  if(applied.professeur) filters.push(`Professeur: ${applied.professeur}`);
+  if(applied.parcours) filters.push(`Parcours: ${applied.parcours}`);
+  if(applied.semestre) filters.push(`Semestre: ${applied.semestre}`);
+  if(applied.matiere) filters.push(`Matière: ${applied.matiere}`);
+  
+  if(filters.length > 0){
+    info.innerHTML = '<strong>Filtres appliqués:</strong> ' + filters.join(' | ');
+    info.style.display = 'block';
+  } else {
+    info.style.display = 'none';
+  }
+}
+
+function populateFilterOptions(filters){
+  if(!filters) return;
+  const setOptions = (id, values) => {
+    const s = document.getElementById(id); if(!s) return;
+    s.innerHTML = '<option value="">-- Choisir --</option>';
+    values.forEach(v=>{ const o=document.createElement('option'); o.value=v; o.textContent=v; s.appendChild(o); });
+  }
+  setOptions('f_professeur', filters.professeur || []);
+  setOptions('f_parcours', filters.parcours || []);
+  setOptions('f_semestre', filters.semestre || []);
+  setOptions('f_matiere', filters.matiere || []);
+}
+
+function getFilterQuery(){
+  const params = new URLSearchParams();
+  ['f_professeur','f_parcours','f_semestre','f_matiere'].forEach(id=>{
+    const v = document.getElementById(id).value; if(v) params.append(id.replace('f_',''), v);
+  });
+  const qs = params.toString(); return qs ? ('?'+qs) : '';
+}
+
+document.getElementById('applyFilters').addEventListener('click', (e)=>{ e.preventDefault(); fetchCharts(getFilterQuery()); });
+document.getElementById('resetFilters').addEventListener('click', (e)=>{ e.preventDefault(); ['f_professeur','f_parcours','f_semestre','f_matiere'].forEach(id=>document.getElementById(id).value=''); fetchCharts(); });
+
+// called after generation
+document.getElementById("generateForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const msg = document.getElementById("generateMsg");
+  const tbody = document.querySelector("#previewTable tbody");
+
+  try {
+    const res = await fetch("/upload/", { method: "POST", body: formData });
+    const data = await res.json();
+
+    msg.classList.remove("text-success", "text-danger");
+
+    if (res.ok) {
+      msg.classList.add("text-success");
+      msg.textContent = data.message || "Données générées avec succès ";
+
+      // remplir le tableau
+      tbody.innerHTML = "";
+      (data.preview || []).forEach(row => {
+        tbody.innerHTML += `
+          <tr>
+            <td>${row["Etudiant"]}</td>
+            <td>${row["Genre"]}</td>
+            <td>${row["Age"]}</td>
+            <td>${row["Parcours"]}</td>
+            <td>${row["semestre"]}</td>
+            <td>${row["UE-Code"]}</td>
+            <td>${row["UE-intituler"]}</td>
+            <td>${row["Professeur"]}</td>
+            <td>${row["Credit"]}</td>
+            <td>${row["Note"]}</td>
+          </tr>`;
+      });
+
+      fetchCharts();
+    } else {
+      msg.classList.add("text-danger");
+      msg.textContent = data.error || "Erreur lors de la génération.";
+    }
+  } catch (err) {
+    msg.classList.remove("text-success");
+    msg.classList.add("text-danger");
+    msg.textContent = "Erreur réseau : " + err;
+  }
+});
+
+function renderCharts(charts, applied){
+  const container = document.getElementById('chartsContainer');
+  container.innerHTML = '';
+
+  function addCard(title, subtitle){
+    const wrap = document.createElement('div');
+    wrap.style.minWidth = '320px'; wrap.style.flex = '1 1 320px'; wrap.className='border rounded p-2 bg-white';
+    const h = document.createElement('h6'); h.textContent = title; h.className='mb-1';
+    if(subtitle){ const s=document.createElement('div'); s.className='text-muted small mb-2'; s.textContent=subtitle; wrap.appendChild(s);} 
+    const canvas = document.createElement('canvas'); wrap.appendChild(h); wrap.appendChild(canvas); container.appendChild(wrap); return canvas.getContext('2d');
+  }
+
+  if(charts.histogram && charts.histogram.counts && charts.histogram.counts.length > 0){
+    const ctx = addCard('Histogramme des notes');
+    const bins = charts.histogram.bins; const labels=[]; for(let i=0;i<bins.length-1;i++) labels.push(`${bins[i].toFixed(1)}-${bins[i+1].toFixed(1)}`);
+    new Chart(ctx, {type:'bar', data:{labels, datasets:[{label:'Effectif', data:charts.histogram.counts, backgroundColor:'rgba(54,162,235,0.6)'}]}});
+  }
+
+  if(charts.avg_per_ue && charts.avg_per_ue.labels && charts.avg_per_ue.labels.length > 0){
+    const ctx = addCard('Moyenne par UE');
+    new Chart(ctx, {type:'bar', data:{labels:charts.avg_per_ue.labels, datasets:[{label:'Moyenne', data:charts.avg_per_ue.values, backgroundColor:'rgba(75,192,192,0.6)'}]}});
+  }
+
+  if(charts.avg_per_parcours && charts.avg_per_parcours.labels && charts.avg_per_parcours.labels.length > 0){
+    const ctx = addCard('Moyenne par Parcours');
+    new Chart(ctx, {type:'bar', data:{labels:charts.avg_per_parcours.labels, datasets:[{label:'Moyenne', data:charts.avg_per_parcours.values, backgroundColor:'rgba(153,102,255,0.6)'}]}});
+  }
+
+   
+  if(charts.gender && charts.gender.labels && charts.gender.labels.length > 0){
+    const ctx = addCard('Répartition par genre');
+    new Chart(ctx, {type:'doughnut', data:{labels:charts.gender.labels, datasets:[{data:charts.gender.values, backgroundColor:['#4e79a7','#f28e2b','#e15759']}]} });
+  }
+
+  if(charts.scatter_credit_note && charts.scatter_credit_note.length > 0){
+    const ctx = addCard('Crédits vs Note (scatter)');
+    const data = charts.scatter_credit_note.map(p=>({x:p.Credit, y:p.Note}));
+    new Chart(ctx, {type:'scatter', data:{datasets:[{label:'Crédit vs Note', data, backgroundColor:'rgba(255,99,132,0.7)'}]}, options:{scales:{x:{title:{display:true,text:'Credit'}}, y:{title:{display:true,text:'Note'}}}}});
+  }
+
+  if(charts.avg_per_semestre && charts.avg_per_semestre.labels && charts.avg_per_semestre.labels.length > 0){
+    const ctx = addCard('Moyenne par Semestre');
+    new Chart(ctx, {type:'bar', data:{labels:charts.avg_per_semestre.labels, datasets:[{label:'Moyenne', data:charts.avg_per_semestre.values, backgroundColor:'rgba(255,159,64,0.6)'}]}});
+  }
+}
+
+fetchCharts();
+
+async function exportResults(){
+  const exportBtn = document.getElementById('exportBtn');
+  const status = document.getElementById('exportStatus');
+  exportBtn.disabled = true;
+  status.textContent = '';
+  
+  try {
+    const zip = new JSZip();
+    const now = new Date().toISOString().replace(/[:.]/g, '-').slice(0, -5);
+    const timestamp = `resultats_${now}`;
+    
+    const canvases = document.querySelectorAll('#chartsContainer canvas');
+    for (let i = 0; i < canvases.length; i++) {
+      const canvas = canvases[i];
+      const parent = canvas.closest('div');
+      const title = parent.querySelector('h6')?.textContent || `graphique_${i+1}`;
+      const cleanTitle = title.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+      
+      const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+      zip.file(`${cleanTitle}.png`, blob);
+    }
+    
+    const csvRes = await fetch('/export/');
+    if(csvRes.ok){
+      const csvBlob = await csvRes.blob();
+      zip.file('donnees.csv', csvBlob);
+    }
+    
+    const filterInfo = document.getElementById('filterInfo').innerHTML;
+    if(filterInfo){
+      const filters = new Map();
+      ['professeur','parcours','semestre','matiere'].forEach(f=>{
+        const val = document.getElementById('f_'+f).value;
+        if(val) filters.set(f, val);
+      });
+      zip.file('filtres.json', JSON.stringify(Object.fromEntries(filters), null, 2));
+    }
+    
+    const zipBlob = await zip.generateAsync({type: 'blob'});
+    saveAs(zipBlob, `${timestamp}.zip`);
+    
+    status.textContent = '✅ Téléchargement réussi !';
+    setTimeout(() => {
+      status.textContent = '';
+      exportBtn.disabled = false;
+    }, 2000);
+  } catch(err){
+    console.error('Export error:', err);
+    status.textContent = 'Erreur lors de l\'export';
+    exportBtn.disabled = false;
+  }
+}
+
+document.getElementById('exportBtn').addEventListener('click', exportResults);
+</script>
+{% endblock %}
